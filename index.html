@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro e Sorteio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #timer {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cronômetro e Sorteio de Temas</h1>
+
+    <!-- Cronômetro -->
+    <div id="timer">00:00</div>
+    <button onclick="startTimer()">Iniciar Cronômetro</button>
+    <button onclick="resetTimer()">Resetar Cronômetro</button>
+
+    <!-- Sorteio de Temas -->
+    <h2>Temas</h2>
+    <button onclick="sorteio('tema')">Sortear Tema</button>
+    <p id="tema">Nenhum tema sorteado ainda.</p>
+
+    <!-- Sorteio de Perguntas -->
+    <h2>Perguntas</h2>
+    <button onclick="sorteio('pergunta')">Sortear Pergunta</button>
+    <p id="pergunta">Nenhuma pergunta sorteada ainda.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
